@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Capitol2.Models;
 using System;
+using System.Linq;
 
 namespace Capitol2.Controllers
 {
@@ -14,9 +15,22 @@ namespace Capitol2.Controllers
             return View("MyView");
         }
 
+        [HttpGet]
         public ViewResult RsvpForm()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ViewResult RsvpForm(GuestResponse guestResponse)
+        {
+            Repository.AddResponse(guestResponse);
+            return View("Thanks",guestResponse);
+        }
+
+        public ViewResult ListResponses()
+        {
+            return View(Repository.Responses.Where(r => r.WillAttend == true));
         }
 
         public IActionResult About()
