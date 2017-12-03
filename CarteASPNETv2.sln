@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitol2", "Capitol2\Capito
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitol4", "Capitol4\Capitol4.csproj", "{45055EB3-F39D-4BAD-BA86-BFF9BD632C00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore", "Capitol8\SportsStore.csproj", "{09E74C04-708D-4CD0-8437-09E54DE64350}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportsStore", "Capitol8\SportsStore.csproj", "{09E74C04-708D-4CD0-8437-09E54DE64350}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Tests", "SportsStore.Tests\SportsStore.Tests.csproj", "{B9657BFF-2ACB-4EB3-BE53-126FD74E796A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportsStore.Tests", "SportsStore.Tests\SportsStore.Tests.csproj", "{B9657BFF-2ACB-4EB3-BE53-126FD74E796A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFSQLiteTest", "EFSQLiteTest\EFSQLiteTest.csproj", "{FB7998B5-7F98-4C75-A6BB-6668BEB6AB28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B9657BFF-2ACB-4EB3-BE53-126FD74E796A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9657BFF-2ACB-4EB3-BE53-126FD74E796A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9657BFF-2ACB-4EB3-BE53-126FD74E796A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7998B5-7F98-4C75-A6BB-6668BEB6AB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7998B5-7F98-4C75-A6BB-6668BEB6AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7998B5-7F98-4C75-A6BB-6668BEB6AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7998B5-7F98-4C75-A6BB-6668BEB6AB28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
