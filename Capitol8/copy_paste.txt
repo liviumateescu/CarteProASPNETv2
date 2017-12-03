@@ -2,3 +2,14 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
     
+
+	public ViewResult List(int productPage = 1) 
+            => View(repository.Products
+                .OrderBy(p=>p.ProductID)
+                .Skip((productPage-1) * PageSize)
+                .Take(PageSize));
+
+
+    <link rel="stylesheet"
+          asp-href-include="/lib/bootstrap/dist/**/*.min.css"
+          asp-href-exclude="**/*-reboot*,**/*-grid*" />
